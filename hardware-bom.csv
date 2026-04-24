@@ -1,0 +1,7 @@
+Component Type,Vendor,Model,Specifications,Quantity,Integration Status
+CPU/GPU Node,NVIDIA,DGX A100,8x A100 GPUs, 2TB RAM,10,Integrated
+Quantum Processor,IBM,Quantum System One,512 qubits,2,Validated
+Satellite Terminal,SpaceX,Starlink v2,100Mbps downlink,50,Deployed
+Bio-Sensor,Medtronic,EEG System,1ms resolution,15,Integrated
+Server Rack,Dell,PowerEdge R760,2x Xeon 8480,20,Operational
+Network Switch,Cisco,Nexus 9300,100Gbps ports,8,Deployed

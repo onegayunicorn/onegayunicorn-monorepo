@@ -1,0 +1,12 @@
+openapi: 3.0.0
+info:
+  title: One Gay Unicorn API
+  version: 1.0.0
+  description: API documentation for One Gay Unicorn Foundation projects.
+paths:
+  /health:
+    get:
+      summary: Health check endpoint
+      responses:
+        '200':
+          description: System is healthy

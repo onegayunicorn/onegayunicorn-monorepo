@@ -1,0 +1,11 @@
+{
+  "source": {
+    "include": ["packages"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "opts": {
+    "destination": "./docs/api/jsdoc",
+    "recurse": true
+  }
+}

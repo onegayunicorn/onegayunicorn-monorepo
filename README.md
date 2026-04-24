@@ -1,11 +1,33 @@
-<div align="center">
+# ONE GAY UNICORN FOUNDATION MONOREPO
+Unified repository integrating all Foundation projects, frameworks, and infrastructure.
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+---
 
-  <h1>Built with AI Studio</h2>
+## REPO CONTENTS
+- **Conscious Engine**: Cognitive core framework
+- **Singularity Engine**: Self-evolving system architecture
+- **Satellite/Starlink Framework**: Global communication infrastructure
+- **GAYA Wallet**: Financial integration layer
+- **Unified Integration**: Cross-system communication layer
+- **Infrastructure**: IaC, Kubernetes, and deployment tools
+- **Sandboxes**: Isolated test environments
+- **Research & Extract**: Research artifacts and extraction reports
+- **Documentation**: Comprehensive guides and specifications
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+---
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## QUICK START
+### 1. Clone the repo
+```bash
+git clone https://github.com/onegayunicorn/onegayunicorn-monorepo.git
+cd onegayunicorn-monorepo
+```
 
-</div>
+### 2. Set up dependencies
+```bash
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Install Node.js dependencies
+npm install
+```

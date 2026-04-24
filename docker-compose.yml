@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=oguf
+      - POSTGRES_PASSWORD=oguf-sandbox
+
+  vault:
+    image: hashicorp/vault:latest
+    ports:
+      - "8200:8200"
+    environment:
+      - VAULT_DEV_ROOT_TOKEN_ID=root
+      - VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200
+    volumes:
+      - ./infrastructure/vault/config.hcl:/vault/config/config.hcl
