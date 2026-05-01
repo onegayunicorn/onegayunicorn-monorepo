@@ -1,7 +1,16 @@
 import time
 import json
+import sys
+import logging
 from flask import Flask, jsonify
 from flask_cors import CORS
+
+# Configure logging to stdout
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    stream=sys.stdout
+)
 
 app = Flask(__name__)
 CORS(app)
@@ -28,6 +37,10 @@ def index():
     return "🦄 OGUF Orchestrator is ACTIVE"
 
 if __name__ == '__main__':
-    print("Orchestrator starting — REAL PRODUCTION DEPLOYMENT")
-    print(" * Serving Flask app 'orchestrator'")
-    app.run(host='0.0.0.0', port=8080)
+    logging.info("Orchestrator starting — REAL PRODUCTION DEPLOYMENT")
+    try:
+        # Use threaded=True for better performance in Termux
+        app.run(host='0.0.0.0', port=8080, debug=False, threaded=True)
+    except Exception as e:
+        logging.error(f"Failed to start Orchestrator: {e}")
+        sys.exit(1)
