@@ -31,3 +31,8 @@ pip install -r requirements.txt
 # Install Node.js dependencies
 npm install
 ```
+
+## OGUF Deployment
+To deploy the OGUF stack on your device:
+1. Run `./setup-oguf.sh` to install dependencies.
+2. Run `./launch-oguf.sh` to start the Orchestrator and Bridge.
