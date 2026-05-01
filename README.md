@@ -36,3 +36,11 @@ npm install
 To deploy the OGUF stack on your device:
 1. Run `./setup-oguf.sh` to install dependencies.
 2. Run `./launch-oguf.sh` to start the Orchestrator and Bridge.
+
+## OGUF Termux Deployment
+The OGUF system is now optimized for Termux/Linux environments.
+To launch the full stack:
+```bash
+./launch-oguf-termux.sh
+```
+This will start the Orchestrator, Termux Bridge, and Entanglement Twins.
